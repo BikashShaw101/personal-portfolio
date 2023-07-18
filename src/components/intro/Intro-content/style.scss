@@ -1,0 +1,309 @@
+@import '../../../style-config/mixins.scss';
+@import '../../../style-config/variable.scss';
+
+.intro-content{
+    margin-top: 50px;
+    flex-grow: 1;
+    display: flex;
+    // align-items: flex-end;
+    .layout{
+        display: flex;
+        .left-col{
+            width: 45%;
+            @include large-screen{
+                padding-top: 0;
+                width: 30%;
+            }
+            @include medium-screen{
+                padding-top: 0;
+            }
+            .title{
+                display: flex;
+                flex-direction: column;
+                color: $white;
+                .small-text{
+                    @include typography(42px , 500, 48px);
+                    display: flex;
+                    align-items: center;
+                    .icons{
+                        margin-left: 7px;
+                    }
+                }
+                .big-text{
+                    @include typography(62px , 600, 72px);
+                }
+            }
+            p{
+                @include typography(20px , 400, 26px);
+                color: $white;
+                margin: 25px 0;
+                mark{
+                    padding: 0px 5px;
+                    border-radius: 3px;
+                    background-color: $white;
+                  
+                }
+                
+            }
+        }
+        .right-col{
+            width: 55%;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            @include large-screen{
+                width: 70%;
+            }
+            .animate{
+                position: relative;
+                width: 100%;
+                img{
+                    display: block;
+                    // margin-bottom: 40px;
+                    @include large-screen{
+                        margin-bottom: 50px;
+                        transition: all 300ms ease-in-out;
+                        position: relative;
+                        right: -60px;
+                    }
+                    z-index: 5;
+                    &:hover {
+                        // filter: blur(1.0px);
+                        // filter: sepia(30%);
+                        // filter: brightness(90%);
+                        filter: drop-shadow(10px 12px 12px black);
+                        transform: scale(1.2,1.2);
+                    }
+                }
+
+                .sqaure{
+                    position: absolute;
+                }
+
+                // Sqaure animation 
+
+                .sqaure1{
+                    z-index: 2;
+                    width: 75% !important;
+                    top: 0;
+                    left: 5.5rem;
+                }
+                .sqaure2{
+                    z-index: 1;
+                    width: 77% !important;
+                    top: 1rem;
+                    left: 6.2rem;
+                }
+
+                // Circle animation
+
+                .circle1{
+                    top: 200px;
+                    left: 50px;
+                    animation: round 2s ease-in-out 200ms infinite forwards;
+                    width: 8%;
+                    z-index: 3;
+                }
+                .circle2{
+                    top: 208px;
+                    left: 60px;
+                    animation: round 2.4s ease-in-out 200ms infinite forwards;
+                    width: 10%;
+                    z-index: 1;
+                }
+                .circle3{
+                    top: 208px;
+                    left: 40px;
+                    animation: round 1.5s ease-in-out 200ms infinite forwards;
+                    width: 6%;
+                    z-index: 2;
+                }
+
+    
+                #nikhil{
+                    margin-bottom: 190px;
+                    margin-left: -50px;
+                    &:hover{
+                        z-index: 6;
+                        // filter: hue-rotate(20deg);
+                    }
+                }
+                #bikash{
+                    margin-left: -50px;
+                }
+                &:hover .sqaure1,&:hover .sqaure2{
+                    filter: blur(1.0px);
+                }
+                &:hover .sqaure1{
+                    transform: translateY(50px);
+                }
+                &:hover .sqaure2{
+                    transform: translateY(-50px),;
+                }
+
+            }
+
+            @keyframes round {
+
+                0%{
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(200px);
+                }
+                100%{
+                    transform: translateY(0px);
+                }
+            }
+            @keyframes round2 {
+
+                0%{
+                    transform: translateX(0);
+                }
+                50%{
+                    transform: translateX(200px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+            
+            .animate2{
+                .sqaure1{
+                    z-index: 2;
+                    width: 92% !important;
+                    top: 6.2rem;
+                    left: 5rem;
+                }
+                .sqaure2{
+                    z-index: 1;
+                    width: 95% !important;
+                    top: 6rem;
+                    left: 3rem;
+                }
+                &:hover .sqaure1,&:hover .sqaure2{
+                    filter: blur(1.0px);
+                }
+                &:hover .sqaure1{
+                    transform: translateX(50px);
+                }
+                &:hover .sqaure2{
+                    transform: translateX(-50px),;
+                }
+
+
+
+                .circle2{
+                    top: 50px;
+                    left: 400px;
+                    animation: round2 2.4s ease-in-out 200ms infinite forwards;
+                    width: 5%;
+                    z-index: 4;
+                }
+                .circle3{
+                    top: 50px;
+                    left: 350px;
+                    animation: round2 1.6s ease-in-out 200ms infinite forwards;
+                    width: 7%;
+                    z-index: 5;
+                }
+                .circle1{
+                    top: 50px;
+                    left: 300px;
+                    animation: round2 1.3s ease-in-out 200ms infinite forwards;
+                    width: 10%;
+                    z-index: 5;
+                }
+            }
+
+
+            //highlights 
+
+            .highlights{
+                position: absolute;
+                border-radius: 6px;
+
+                @include transition-ease(200ms);
+
+                @include glassMorphismEffect();
+                .icon{
+                    width: 55px;
+                    height: 55px;
+                    min-width: 55px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $yellow;
+                    font-size: 24px;
+                    color: $black-light;
+                }
+                .text{
+                    padding: 0 10px;
+                    @include typography(20px , 400 , 24px);
+                    color: $black-light;
+                    span{
+                        @include typography(20px , 600 , 24px);
+                        display: block;
+                    }
+                }
+                &.horizontal{
+                    width: 208px;
+                    height: 95px;
+                    display: flex;
+                    align-items: center;
+                    top: 20px;
+                    left: 0;
+                    z-index: 10;
+                    padding: 20px 10px 20px 20px;
+                    @include medium-screen{
+                        top: 250px;
+                        left: 0;
+                    }
+                    @include large-screen{
+                        top: 270px;
+                        left: 20px;
+                    }
+                }
+
+
+                &.vertical{
+                    width: 110px;
+                    height: 160px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    top: 20px;
+                    right: 10px;
+                    z-index: 9;
+                    padding: 20px;
+                    text-align: center;
+
+                    @include medium-screen{
+                        top: 80px;
+                        right: 0;
+                    }
+                    @include large-screen{
+                        top: 100px;
+                        right: 0px;
+                    }
+                    .text{
+                        margin-top: 10px;
+                        span{
+                            @include typography(20px , 600, 24px);
+                            display: block;
+                        }
+                    }
+
+                }
+                &:hover{
+
+                   transform: translateY(-20px);
+
+                 }
+
+            }
+
+        }
+    }
+}
