@@ -30,12 +30,13 @@ const FilterName = [
     },
 ]
 
-const Filter = () => {
+const Filter = ({ filterProject }) => {
 
     const [active,setActive] = useState("");
 
     const clickHandler = (id) => {
         setActive(id);
+        filterProject(id)
     }
 
   return (

@@ -42,7 +42,7 @@
                         white-space: nowrap;
                     }
 
-                    transition: .5s ease;
+                    @include transition(500ms);
     
                 }
 
