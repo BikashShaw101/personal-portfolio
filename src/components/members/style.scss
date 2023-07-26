@@ -1,0 +1,132 @@
+
+@import '../../style-config/variable.scss';
+@import '../../style-config/mixins.scss';
+
+.member-content-wrapper{
+    display: flex;
+    align-items: center;
+    .left-col{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        .img-wrapper{
+            display: flex;
+            // margin-bottom: 30px;
+            a.card{
+                width: 100%;
+                overflow: hidden;
+                background-color: $black-light;
+                // padding-top: 10px;
+                border-radius: 8px;
+                margin-right: 20px;
+                position: relative;
+    
+                @include transition-ease;
+    
+                div{
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 0%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: $golden;
+    
+                    p{
+                        color: $black;
+                        @include typography(26px,600,28px);
+                        white-space: nowrap;
+                    }
+
+                    transition: .5s ease;
+    
+                }
+
+                .overlay1{
+                    left: 100%;
+                }
+                .overlay2{
+                    right: 100%;
+                }
+
+                &:hover .overlay1{
+                    filter: opacity(0.5);
+                    width: 100%;
+                    left: 0;
+                }
+
+                &:hover .overlay2{
+                    filter: opacity(0.5);
+                    width: 100%;
+                    right: 0;
+                }
+
+                &:hover{
+                    transform: scale(1.2,1.2);
+                    box-shadow: -10px 0px 25px 0px rgba(255, 176, 30, 0.8);
+                    box-shadow: rgba(255, 176, 30, 0.4) -5px 5px, rgba(255, 176, 30, 0.3) -10px 10px, rgba(255, 176, 30, 0.2) -15px 15px, rgba(255, 176, 30, 0.1) -20px 20px, rgba(255, 176, 30, 0.05) -25px 25px;
+                }
+    
+                img{
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    &#nikhil{
+                        padding-top: 12px;
+                    }
+                }
+                
+            }
+
+        }
+    }
+    .right-col{
+        width: 60%;
+        color: $white;
+        margin-left: 70px;
+        h2{
+            display: inline-block;
+            margin-bottom: 30px;
+            &:hover{
+                color: $yellow
+            }
+        }
+        p{
+            @include typography(20px,500,26px);
+            margin-bottom: 30px;
+            @include transition-ease;
+            &:hover{
+                letter-spacing: 0.1px;
+            }
+        }
+        .icons{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            // align-items: center;
+            a{
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                background-color: $black-lighter;
+                padding: 10px;
+                border-radius: 50%;
+                cursor: pointer;
+                color: $white;
+                
+                &:hover{
+                    
+                    svg{
+                        transition: fill 90ms ease-in,transform 100ms ease-in;
+                        fill: $golden;
+                        transform: scale(1.1,1.1);
+                    }
+                }
+            }
+        }
+    }
+}

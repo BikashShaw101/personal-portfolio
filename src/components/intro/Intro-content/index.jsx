@@ -4,7 +4,7 @@ import './style.scss';
 
 // import hand from '../../../images/hand.png';
 import nikhil from '../../../images/nikhil.png';
-import bikash from '../../../images/Me.png';
+import bikash from '../../../images/Me2.png';
 
 import sqaure1 from '../../../images/sqaure1.svg';
 import sqaure2 from '../../../images/sqaure2.svg';
@@ -32,7 +32,7 @@ const IntroContent = () => {
                     </span>
                     <span className="big-text">Enbik Cognition</span>
                 </h1>
-                <p>Enbik Cognition Channel contributes its 100% Efforts to generate Trustworthy content , but Every-one have some limitations , if there is any mistakes occur or false <strong>Analysis</strong> found. <mark>Please Make sure to </mark><em>Rectify</em> the Error</p>
+                <p>Enbik Cognition Channel contributes its 100% Efforts to generate Trustworthy content , but Every-one have some limitations , if there is any mistakes occur or false <strong>Analysis</strong> found. Please Make sure to <em>Rectify</em> the Error</p>
                 <CallToAction text="Contact Us" />
             </div>
             <div className="right-col">

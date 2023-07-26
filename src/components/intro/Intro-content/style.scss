@@ -121,15 +121,15 @@
 
     
                 #nikhil{
-                    margin-bottom: 190px;
-                    margin-left: -50px;
+                    // margin-bottom: 0px;
+                    margin-left: -20px;
                     &:hover{
                         z-index: 6;
                         // filter: hue-rotate(20deg);
                     }
                 }
                 #bikash{
-                    margin-left: -50px;
+                    margin-left: -20px;
                 }
                 &:hover .sqaure1,&:hover .sqaure2{
                     filter: blur(1.0px);
@@ -181,6 +181,7 @@
                     top: 6rem;
                     left: 3rem;
                 }
+                
                 &:hover .sqaure1,&:hover .sqaure2{
                     filter: blur(1.0px);
                 }
@@ -261,7 +262,7 @@
                         left: 0;
                     }
                     @include large-screen{
-                        top: 270px;
+                        top: 320px;
                         left: 20px;
                     }
                 }
@@ -284,7 +285,7 @@
                         right: 0;
                     }
                     @include large-screen{
-                        top: 100px;
+                        top: 120px;
                         right: 0px;
                     }
                     .text{

@@ -29,3 +29,29 @@ h4{
 // body{
 //     height: 2000px;
 // }
+
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $golden;
+
+    /* The progress container (grey background) */
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: $white;
+    
+        /* The progress bar (scroll indicator) */
+        .progress-bar {
+            height: 8px;
+            background: $golden;
+            width: 0%;
+            border-radius: 10px 5px;
+        }
+    
+    }
+}
+
+
