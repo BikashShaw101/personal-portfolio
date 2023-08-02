@@ -11,6 +11,9 @@
     &.light{
         background-color: $black-light;
     }
+    &.golden{
+        background: linear-gradient(121deg,#cd7325 9%,#d7843b 41%,#de5916 80%);
+    }
     .content{
         position: relative;
         display: flex;

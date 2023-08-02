@@ -24,21 +24,21 @@ const Members = () => {
 
                     {/* card 1 */}
 
-                    <a href={Bikash} target='blank' className='card'>
+                    <div className='card'>
                         <img src={Bikash} alt="member1" />
                         <div className='overlay1'>
                             <p>Bikash Shaw</p>
                         </div>
-                    </a>
+                    </div>
 
                     {/* card 2 */}
 
-                    <a href={Nikhil} target='blank' className='card'>
+                    <div className='card'>
                         <img src={Nikhil} alt="member1" id='nikhil' />
                         <div className='overlay2'>
                             <p>Nikhil Shaw</p>
                         </div>  
-                    </a>
+                    </div>
                 </div>
                 
             </div>

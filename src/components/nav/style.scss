@@ -1,0 +1,16 @@
+
+.nav-global{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(121deg,#cd7325 9%,#d7843b 41%,#de5916 80%);
+    padding-bottom: 40px;
+    .nav-container{
+        width: 1200px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

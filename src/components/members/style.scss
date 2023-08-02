@@ -14,7 +14,7 @@
         .img-wrapper{
             display: flex;
             // margin-bottom: 30px;
-            a.card{
+            div.card{
                 width: 100%;
                 overflow: hidden;
                 background-color: $black-light;
@@ -91,8 +91,10 @@
         h2{
             display: inline-block;
             margin-bottom: 30px;
+            @include transition;
             &:hover{
-                color: $yellow
+                color: $yellow;
+                letter-spacing: 0.5px;
             }
         }
         p{
@@ -117,13 +119,13 @@
                 border-radius: 50%;
                 cursor: pointer;
                 color: $white;
-                
+                @include transition-ease;
                 &:hover{
                     
                     svg{
                         transition: fill 90ms ease-in,transform 100ms ease-in;
                         fill: $golden;
-                        transform: scale(1.1,1.1);
+                        transform: scale(1.2);
                     }
                 }
             }

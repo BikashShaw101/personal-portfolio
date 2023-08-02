@@ -26,6 +26,13 @@
     --weblit-backdrop-filter : blur(7.5px)
 }
 
+@mixin glassMorphismEffectGolden (){
+    background: rgba(255, 188, 3, 0.35);
+    box-shadow: 0px 8px 32px 0 rgba(25, 25, 25, 0.37);
+    backdrop-filter: blur(8px);
+    --weblit-backdrop-filter : blur(7.5px)
+}
+
 @mixin transition ($time:200ms){
     transition: all $time cubic-bezier(0.175,0.885,0.32,1.275);
 }
@@ -34,7 +41,7 @@
     transition: all $time ease-in-out;
 }
 
-@mixin ellipsis ($line){
+@mixin ellipsis($line){
     display: -webkit-box;
     --webkit-line-clamp: $line;
     --webkit-box-orient : vertical;

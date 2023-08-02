@@ -15,9 +15,7 @@ import cloudSoft from '../../images/cloud-soft.png';
 const Intro = () => {
   return (
     <div className="Intro-section">
-      <div className="vector-img" id='parallax'>
-
-      </div>
+      <div className="vector-img" id='parallax'></div>
 
       <img src={cloud} alt="" className='cloud'/>
       <img src={cloudSoft} alt="" className='cloud-soft'/>

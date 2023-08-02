@@ -1,0 +1,11 @@
+@import '../../style-config/mixins.scss';
+@import '../../style-config/variable.scss';
+
+.blog-content-wrapper2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    overflow: hidden;
+}

@@ -33,7 +33,7 @@ const IntroContent = () => {
                     <span className="big-text">Enbik Cognition</span>
                 </h1>
                 <p>Enbik Cognition Channel contributes its 100% Efforts to generate Trustworthy content , but Every-one have some limitations , if there is any mistakes occur or false <strong>Analysis</strong> found. Please Make sure to <em>Rectify</em> the Error</p>
-                <CallToAction text="Contact Us" />
+                <CallToAction text="About Us" />
             </div>
             <div className="right-col">
 
